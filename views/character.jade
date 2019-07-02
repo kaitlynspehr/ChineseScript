@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+	head
+		title Chinese Character Decomposition
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/cover.css')
+		link(rel='stylesheet', href='/stylesheets/d3.css')
+	body
+		div(class='site-wrapper')
+			div(class='site-wrapper-inner')
+				div(class='cover-container')
+					div(class='masthead clearfix')
+						div(class='inner')
+							a(href='/')
+								h2(class='masthead-brand') Decomposer
+							nav
+								ul(class='nav masthead-nav')
+									li: a(href='/') Home
+									li: a(href='/about') About
+									li: a(href='/contact') Contact & References
+					div(class='inner cover')
+						h1(class='cover-heading', style='padding: 0px 0px 20px 0px') Character: #{character}
+						
+						p#here
+						div#body.col-md-6
+						div.col-md-6
+							h3#comp
+							p#def
+					div(class='mastfoot', class='col-md-12')
+						div(class='inner')
+							p Created by Kaitlyn Spehr for Chinese 4803 at Ohio State.
+		script(type='text/javascript', src='/javascripts/d3.js')
+		script(type='text/javascript', src='/javascripts/d3.layout.js')
+		script.
+			var local_data = !{JSON.stringify(data)};
+		script(src='/javascripts/vertTree.js')
+		script.
+			var local_data = !{JSON.stringify(data)};
+		script(src='/javascripts/synonyms.js')

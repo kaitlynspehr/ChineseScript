@@ -1,0 +1,52 @@
+.node {
+  cursor: pointer;
+}
+
+.normal{
+  fill: #ccc;
+  stroke: #ccc;
+  stroke-width: 10px;
+}
+
+.sound1{
+  fill: #6bb9c7;
+  stroke: #6bb9c7;
+  stroke-width: 10px;
+}
+
+.sound2{
+  fill: #6bb9c7;
+  stroke: #6bb9c7;
+  stroke-width: 10px;
+}
+
+.sound3{
+  fill: #6bb9c7;
+  stroke: #6bb9c7;
+  stroke-width: 10px;
+}
+
+.sound4{
+  fill: #6bb9c7;
+  stroke: #6bb9c7;
+  stroke-width: 10px;
+}
+
+.meaning{
+  fill: #fcda53;
+  stroke: #fcda53;
+  stroke-width: 10px;
+}
+
+.node text {
+  fill: #333;
+  font-size: 24px;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2.5px;
+}

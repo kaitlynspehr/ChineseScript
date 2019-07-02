@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+	head
+		title Chinese Character Decomposition
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/cover.css')
+		link(rel='stylesheet', href='/stylesheets/d3.css')
+	body
+		div(class='site-wrapper')
+			div(class='site-wrapper-inner')
+				div(class='cover-container')
+					div(class='masthead clearfix')
+						div(class='inner')
+							a(href='/')
+								h2(class='masthead-brand') Decomposer
+							nav
+								ul(class='nav masthead-nav')
+									li: a(href='/') Home
+									li(class='active'): a(href='/about') About
+									li: a(href='/contact') Contact & References
+					div(class='inner cover')
+							h1(class='cover-heading', style='padding: 0px 0px 20px 0px') About
+							h3(class='cover-heading') How To Use This Website
+							div(class='skinny')
+								p This website decomposes Chinese characters into their components. To use this website enter a character on the homepage and click 'decompose'. Explore the tree of the character's components by clicking on them. 
+								p On this right side of the screen, information will pop up about the component. If a node is blue, this means the component is a phonetic component. The darker it is, the closer it is to the pronunciation of the character. If a node is orange, this means the component is a semantic component and is closely related to the meaning of the character. You can also explore other characters that include each component by clicking on any of the characters under 'some other characters with this component'. 
+							h3(class='cover-heading') About Pictophonetic Characters
+							div(class='skinny')
+								p This website focuses on learning about pictophonetic characters, which are characters that have a semantic component (a component that has to do with the meaning of the character) and a phonetic component (a component that has to do with the sound of the character).
+							h3(class='cover-heading') Example Characters
+							div(class='skinny')
+								p The goal of this website is to be able to detect both the semantic and phonetic parts of each character. However this can be difficult due to the pronunciation of characters changing over time, the semantic component's meaning being very loosely associated with the character's definition, etc. As of right now, here are some example characters where the website can detect both semantic and phonetic, either semantic or phonetic, or neither of these components.
+							p Characters with both semantic and phonetic parts detected: <a href='/character?character=飙'>飙</a>, <a href='/character?character=%E7%A2%91'>碑</a>, <a href='/character?character=%E8%A7%A1'>觡</a>, <a href='/character?character=%E5%9C%B0'>地</a>
+							p Characters with only the phonetic part detected: <a href='/character?character=妈'>妈</a>, <a href='/character?character=蒂'>蒂</a>
+							p Characters with neither part detected: <a href='/character?character=那'>那</a>
+							p Characters with signs or more than two components: <a href='/character?character=举'>举</a>, <a href='/character?character=颖'>颖</a>
+							p Associative compound characters: <a href='/character?character=穿'>穿</a>, <a href='/character?character=欠'>欠</a>
+					div(class='mastfoot', class='col-md-12')
+						div(class='inner')
+							p Created by Kaitlyn Spehr for Chinese 4803 at Ohio State.
